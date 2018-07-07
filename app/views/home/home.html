@@ -1,0 +1,84 @@
+<div class="col-xs-12">
+    <h1>
+        Pizza Mania
+    </h1>
+    <br>
+    <div class="col-xs-12">
+        <div class="col-xs-12">
+            <label class="full-width">
+                Base *
+            </label>
+            <md-radio-group ng-model="data.group1">
+                <div class="col-xs-12">
+                    <md-radio-button value="normal" class="md-primary">Normal</md-radio-button>
+                </div>
+                <div class="col-xs-12">
+                    <md-radio-button value="thin">Thin Crust</md-radio-button>
+                </div>
+            </md-radio-group>
+        </div>
+        <div class="col-xs-12">
+            <label class="full-width">
+                Toppings * (Max 3)
+            </label>
+            <div class="col-xs-12" ng-repeat="veggies in [1,2,3,4,5]">
+                <md-checkbox ng-checked="exists(item, selected)" ng-click="toggle(item, selected)">
+                    Toppings {{ veggies }}
+                </md-checkbox>
+            </div>
+        </div>
+        <div class="col-xs-12">
+            <label class="full-width">
+                Veggies * (Max 5)
+            </label>
+            <div class="col-xs-12" ng-repeat="veggies in [1,2,3,4,5]">
+                <md-checkbox ng-checked="exists(item, selected)" ng-click="toggle(item, selected)">
+                    Veggies {{ veggies }}
+                </md-checkbox>
+            </div>
+        </div>
+        <div class="col-xs-12">
+            <label class="full-width">
+                Cheese * (Max 1)
+            </label>
+            <div class="col-xs-12" ng-repeat="veggies in [1,2,3,4,5]">
+                <md-checkbox ng-checked="exists(item, selected)" ng-click="toggle(item, selected)">
+                    Cheese {{ veggies }}
+                </md-checkbox>
+            </div>
+        </div>
+        <div class="col-xs-12">
+            <label class="full-width">
+                Sauces (Minimum 1)
+            </label>
+            <div class="col-xs-12" ng-repeat="veggies in [1,2,3,4,5]">
+                <md-checkbox ng-checked="exists(item, selected)" ng-click="toggle(item, selected)">
+                    Sauces {{ veggies }}
+                </md-checkbox>
+            </div>
+        </div>
+        <div class="col-xs-12">
+            <label class="full-width">
+                Sides and Desserts
+            </label>
+            <div class="col-xs-12" ng-repeat="veggies in [1,2,3,4,5]">
+                <md-checkbox ng-checked="exists(item, selected)" ng-click="toggle(item, selected)">
+                    Sides and desserts {{ veggies }}
+                </md-checkbox>
+            </div>
+        </div>
+        <div class="col-xs-12">
+            <label class="full-width">
+                Extras
+            </label>
+            <div class="col-xs-12" ng-repeat="veggies in [1,2,3,4,5]">
+                <md-checkbox ng-checked="exists(item, selected)" ng-click="toggle(item, selected)">
+                    Extra {{ veggies }}
+                </md-checkbox>
+            </div>
+        </div>
+        <div class="col-xs-12">
+            <md-button class="md-raised md-primary">Order</md-button>
+        </div>
+    </div>
+</div>
