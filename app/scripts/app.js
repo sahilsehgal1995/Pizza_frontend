@@ -37,6 +37,6 @@ angular
         .state('PIZZA.ORDER', {
             templateUrl: "views/cart/order.html",
             controller: "CartOrderCtrl as vm",
-            url: "/order"
+            url: "/cart"
         });
   });
