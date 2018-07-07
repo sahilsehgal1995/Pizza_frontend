@@ -23,15 +23,20 @@ angular
   .config(function ($stateProvider, $urlRouterProvider) {
       $urlRouterProvider.otherwise('/home');
     $stateProvider
-        .state('SPOT', {
+        .state('PIZZA', {
             templateUrl: "views/main.html",
             url: "",
             abstract: true,
             controller: 'MainCtrl as vm'
         })
-        .state('SPOT.HOME', {
+        .state('PIZZA.HOME', {
             templateUrl: "views/home/home.html",
             controller: "HomeCtrl as vm",
             url: "/home"
+        })
+        .state('PIZZA.ORDER', {
+            templateUrl: "views/cart/order.html",
+            controller: "CartOrderCtrl as vm",
+            url: "/order"
         });
   });
